@@ -71,7 +71,7 @@ const setTime = data => {
     let hours = locSelectTime.getHours();
     let minutes = locSelectTime.getMinutes();
     let seconds = locSelectTime.getSeconds();
-    if (hours > 19 && hours > 6) {
+    if (hours > 19 || hours < 6) {
         moonIcon.style.display = 'block';
         sonIcon.style.display = 'none';
     } else {
