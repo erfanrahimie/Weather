@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="web-font/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <main class="container">
+        <section class="main-box">
+            <header>
+                <span><span class="lnr lnr-menu"></span></span>
+                
+                <div>
+                    <form class="search-container">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <span><span class="lnr lnr-magnifier"></span></span>  
+                    </form>
+
+                    <span><span class="lnr lnr-undo"></span></span>
+                </div>
+            </header>
+            <section class="weather-info">
+                <div class="w-icon">
+                    <span class="lnr lnr-sun"></span>
+                    <span class="lnr lnr-moon"></span>
+                    <span></span>
+                </div>
+                <div class="w-info">
+                    <h2>INFORMATON:</h2>
+                    <p>Country: <span></span></p>
+                    <p>City air: <span></span></p>
+                    <p>Temp: <span></span></p>
+                    <p>Feels like: <span></span></p>
+                    <p>Wind speed: <span></span></p>
+                    <p>Humidity: <span></span></p>
+                    <p>Time: <span></span></p>
+                </div>
+            </section>
+            <section class="location-list">
+                <div>
+                    <h2>All location:</h2>
+                    <span><span class="lnr lnr-map-marker"></span></span>
+                </div>
+                <ul>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <div id="alerts-container"></div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div id="map" class="map"></div>
+            <button>Selection</button>
+            <span>&times;</span>
+        </div>
+    </div>
+    <script src="web-font/selection.json"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
